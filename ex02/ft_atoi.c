@@ -6,7 +6,7 @@
 /*   By: equillie <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/09 16:31:57 by equillie          #+#    #+#             */
-/*   Updated: 2018/07/18 17:48:39 by equillie         ###   ########.fr       */
+/*   Updated: 2018/07/18 18:05:25 by equillie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,8 @@ int		ft_atoi(char *str)
 	i = 0;
 	nb = 0;
 	signe = 1;
-	while (str[i] == '\t' || str[i] == '\n' || str[i] == '\r' || str[i] == '\v' || str[i] == '\f' || str[i] == ' ')
+	while (str[i] == '\t' || str[i] == '\n' || str[i] == '\r'
+			|| str[i] == '\v' || str[i] == '\f' || str[i] == ' ')
 		i++;
 	if (str[i] == '-' || str[i] == '+')
 	{
